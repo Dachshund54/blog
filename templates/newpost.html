@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>CS 253 Blog</title>
+  </head>
+
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+      width: 800px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+    .error {
+      color: red
+    }
+    label {
+      display: block;
+      font-size: 20px;
+    }
+    input[type=text] {
+      width: 400px;
+      font-size: 20px;
+      padding: 2px;
+    }
+    textarea {
+      width: 400px;
+      height: 200px;
+      font-size: 17px;
+      font-family: monospace;
+    }
+    input[type=submit] {
+      font-size: 15px;
+    }
+    .main-title {
+      font-family: Helvetica, Arial, sans-serif;
+      display: block;
+      color: #222;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  </style>
+
+  <body>
+    <a class="main-title">CS 253 Blog</a>
+    <form method="post">
+      <h2>new post</h2>
+      <label>
+        <div>subject</div>
+        <input type="text" name="subject" value = "{{subject}}">
+      </label>
+      <label>
+        <div>blog</div>
+        <textarea name="blog">{{blog}}</textarea>
+      </label>
+      <div class="error">{{error}}</div>
+      <input type="submit">
+    </form>
+  </body>
+
+</html>
